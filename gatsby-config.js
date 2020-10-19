@@ -2,14 +2,14 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    siteName: 'My Shop',
+    siteName: 'Jeana-May',
   },
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-datocms`,
-      options: { apiToken: process.env.DATO_API_TOKEN },
+      options: { apiToken: '89afb82f1f7e93f114e757a1c85b14' },
     },
     {
       resolve: 'gatsby-plugin-snipcart',
