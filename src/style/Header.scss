@@ -1,8 +1,7 @@
 .Header {
-  background: #663399;
+  background: #ee04bb;
   color: white;
   border-bottom: 3px solid white;
-  box-shadow: 0 16px 0 black;
 }
 
 .Header__body {
@@ -13,7 +12,7 @@
 .Header__title {
   flex: 1;
   padding: 20px 0;
-  font-family: "times new roman", times, serif;
+  font-family: 'Dr Sugiyama';
   font-style: italic;
 
   a {
@@ -64,5 +63,5 @@
 }
 
 .Header__summary__line {
-  font-size: 0.8em;
+  font-size: 0.98em;
 }

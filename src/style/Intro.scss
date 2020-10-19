@@ -1,0 +1,27 @@
+.Intro {
+  margin: 16vh 0;
+}
+
+.Intro__item {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 600px) {
+  .Intro {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .Intro {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .Intro__item {
+    width: 28%;
+  }
+}

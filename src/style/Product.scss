@@ -5,12 +5,9 @@
 }
 
 .Product__image {
-  border: 3px solid black;
-  padding: 7px;
   width: 100%;
   position: relative;
   margin-bottom: 25px;
-  box-shadow: 9px 9px black;
 
   img {
     width: 100%;
@@ -18,11 +15,9 @@
   }
 }
 
-.Product:hover .Product__image {
-  img {
-    transform: skew(-15deg, -5deg) rotate(20deg);
-  }
-
+.Product {
+  position: relative;
+  display: inline-block;
   &:before, &:after {
     content: "";
     position: absolute;
@@ -45,6 +40,23 @@
   }
 }
 
+.Product .Product__image_alt {
+  display: none;
+}
+
+.Product:hover .Product__image_normal {
+  display: none;
+}
+
+.Product:hover .Product__image_alt {
+  display: inline;
+}
+
+.Product__details {
+  display: flex;
+  align-items: center;
+}
+
 .Product__details {
   display: flex;
   align-items: center;
@@ -52,13 +64,14 @@
 
 .Product__name {
   font-weight: bold;
-  padding-right: 20px;
+  font-size: 1.3em;
+  padding-right: 30px;
 }
 
 .Product__price {
-  font-size: 0.8em;
+  font-size: 0.98em;
   font-weight: normal;
-  color: #555;
+  color: rgb(197, 57, 190);
 }
 
 .Product__buy {
@@ -73,23 +86,6 @@
 
   &:hover {
     text-decoration: underline;
-
-    &:before {
-      content: "Yes now";
-      position: absolute;
-      top: -10px;
-      left: 60%;
-      white-space: nowrap;
-      font-family: "times new roman", times, serif;
-      font-weight: normal;
-      font-style: italic;
-      mix-blend-mode: difference;
-      text-transform: lowercase;
-      text-decoration: overline;
-      color: #00efff;
-      font-size: 2em;
-      animation: blink 6s steps(4, end) infinite alternate-reverse;
-    }
   }
 }
 
