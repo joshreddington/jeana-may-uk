@@ -7,19 +7,19 @@ import '../style/index.scss'
 
 const Layout = ({ children, site }) => (
   <div>
-    <Helmet title="Jeana-May" />
+    <Helmet title="Jeana ~ May" />
     <div className="Container">
       <div className="Header">
         <div className="Wrap" >
           <div className="Header__body">
             <h1 className="Header__title">
               <Link data-text={site.siteMetadata.siteName} to="/">
-                {site.siteMetadata.siteName} DEV
+                {site.siteMetadata.siteName}
               </Link>
             </h1>
             <div className="Header__summary snipcart-summary snipcart-checkout">
               <div className="Header__summary__title">
-                🛍 MY CART 🛍
+                My Basket
               </div>
               <div className="Header__summary__line">
                 Number of items: <span className="snipcart-total-items"></span>
@@ -35,7 +35,7 @@ const Layout = ({ children, site }) => (
         {children}
       </div>
       <div className="Footer">
-        © Val Reddington, 2020.
+        © Valerie Reddington, 2020.
       </div>
     </div>
   </div>

@@ -1,5 +1,5 @@
 .Header {
-  background: #ee04bb;
+  background: #800020;
   color: white;
   border-bottom: 3px solid white;
 }
@@ -13,16 +13,16 @@
   flex: 1;
   padding: 20px 0;
   font-family: 'Dr Sugiyama';
-  font-style: italic;
 
   a {
-    font-size: 6em;
+    font-size: 3em;
     font-weight: bold;
     position: relative;
     color: white;
     text-decoration: none;
     display: block;
     padding: 2px;
+    margin-right: 1em;
 
     &:after, &:before {
       content: attr(data-text);
